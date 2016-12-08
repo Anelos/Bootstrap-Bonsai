@@ -42,7 +42,14 @@ li a {
     padding-top: .5em;
     padding-bottom: .5em;
 }
-@media (max-width: 400px) {}
+@media (max-width: 500px) {
+    #button{
+        width: 300px;
+    }
+    nav *{
+        margin-left:0;
+    }
+}
 h1 {
     font-size: 2.5em;
 }
@@ -53,5 +60,9 @@ h1 {
 @media screen and (min-width: 480px) {
     #disclaimer {
         margin-top: 50px;
+        margin-bottom: 50px;
     }
+}
+#price{
+    font-size: 4em;
 }
