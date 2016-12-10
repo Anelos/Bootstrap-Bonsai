@@ -6,22 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
     <title>Exos Boostrap</title>
 </head>
 
 <body>
-    <nav class="navbar headNav">
+    <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand" href="#">
-                    <div><img src="images/logo-icon-white.png" alt="logo" id="logo"> B O N S A I
-                    </div>
+                    <div><img src="images/logo-icon-white.png" alt="brand" id="logo"> B O N S A I</div>
                 </a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expended="false"> <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
             </div>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.html">LOGIN</a></li>
-                <li><a href="pages/mockup2.html">SIGN UP</a></li>
-            </ul>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="#">SIGN UP</a></li>
+                </ul>
+            </div>
             <div id="announcement">
                 <h1>Simple &amp; Beautiful Payments for Freelancers</h1>
                 <p>Get paid on time, every time.</p>
@@ -31,52 +39,85 @@
             </div>
         </div>
     </nav>
-    <div class="container">
+    <div class="container-fluid" id="main">
         <div class="row" id="disclaimer">
-            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center">
                 <img src="images/payments-calendar-icon.svg">
                 <h2>Quick</h2>
                 <p>to create, send, and pay invoices</p>
             </div>
-            <div id="beautiful" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center">
+            <div id="beautiful" class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center">
                 <img src="images/payments-mail-icon.svg">
                 <h2>Beautiful</h2>
                 <p>process for the freelancer and client</p>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center">
                 <img src="images/payments-methods-icon.svg">
                 <h2>Secure</h2>
                 <p>payments and quick disbursement</p>
             </div>
         </div>
-        <div class="row" id="pricing">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center ">
-                <p>SIMPLE PRICING:</p>
-                <P>PAY WHEN YOU GET PAY</P>
+        <div id="pricingBlock">
+            <div class="row" id="pricing">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center ">
+                    <p>SIMPLE PRICING:</p>
+                    <P>PAY WHEN YOU GET PAY</P>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 col-sm-offset-3 col-md-offset-3 col-lg-offset-3" id="price">$1</div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" id="pricePrecision">
+                    <h2>PER PAID INVOICE</h2>
+                    <p>+2.9% &amp; 30&cent; transaction fee</p>
+
+                </div>
+            </div>
+        </div>
+        <div id="cardBanner">
+            <p>Credit cards supported now. ACH coming soon!</p>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6 hidden-xs graphicBlock" id="graphic1Block">
+                <!-- <div id="graphic1"></div> -->
+                <img class="fancy" src="images/welcome-invoices-graphic-1.png" alt="fancy image 1">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 infoText" id="graphicText1">
+                <h2>Integrates deeply with Bonsai Contracts</h2>
+                <p>Increase your payment rate with Bonsai Contracts: free bulletproof work contracts that are easy to create &amp; e-sign.</p>
+                <p>Once th contract is signed, generate a payment schedule with one click. <i>Contract are optional but recommanded.</i></p>
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-md-offset-4 col-lg-offset-4" id="price">$1</div>
-            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                <h2>PER PAID INVOICE</h2>
-                <p>+2.9% &amp; 30&cent; transaction fee</p>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 infoText" id="graphicText2">
+                <h2>Send &amp; get paid with beautiful invoices</h2>
+                <p>Create invoices and request payment with the click of a button. Customize them to your brand, then send via email ou URL.</p>
+                <p>Clients can pay quickly and securely via credit card. <i>ACH is coming soon.</i></p>
             </div>
-
-
+            <div class="col-sm-6 col-md-6 col-lg-6 hidden-xs graphicBlock" id="graphic2Block">
+                <img class="fancy" src="images/welcome-invoices-graphic-2.png" alt="fancy image 2">
+            </div>
         </div>
-
-
-
-
-
-
+        <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6 hidden-xs graphicBlock" id="graphic3Block">
+                <img class="fancy" src="images/welcome-invoices-graphic-3.png" alt="fancy image 3">
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 infoText" id="graphicText3">
+                <h2>Get paid on time with SmartPay</h2>
+                <p>Escrow-like deposits, smart reminders, soft collections, and much more background magic ensure you're paid on time.</p>
+                <p>Focus on the work you love, not on chasing money. <i>Currently in private beta.</i></p>
+            </div>
+        </div>
+        <div class="row text-center" id="createAccountBlock">
+            <h2>Ready to freelance like a pro?</h2>
+            <h2>Sign up here &amp; get 5 <strong>FREE</strong> invoices.</h2>
+            <div id="createAccountButton">CREATE AN ACCOUNT</div>
+        </div>
 
 
 
     </div>
-    <script src="https://use.fontawesome.com/d45ea48418.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script src="../js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>

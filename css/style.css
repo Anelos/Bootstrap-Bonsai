@@ -1,12 +1,58 @@
-.headNav {
-    background-image: url("../images/payments-banner-graphic.png");
+@media (max-width: 767px) {
+    #button {
+        width: 400px;
+        height: 70px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        padding-top: .5em;
+        padding-bottom: .5em;
+    }
+    .navbar-default {
+        height: 550px;
+    }
+    #price {
+        text-align: center;
+    }
+    #pricePrecision {
+        text-align: center;
+    }
+    #graphicText1 {
+        background-color: #7CD5EF;
+    }
+    #graphicText2 {
+        background-color: #8080BE;
+    }
+    #graphicText3 {
+        background-color: #7CD5EF
+    }
+}
+@media screen and (min-width: 768px) {
+    #disclaimer {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    #pricingBlock {
+        padding-top: 4em;
+    }
+    #price {
+        text-align: right;
+    }
+    #pricePrecision {
+        text-align: left;
+    }
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.navbar-default {
+    background-image: url("../images/payments-banner-graphic.png") !important;
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
 }
-.headNav * {
+.navbar-default * {
     color: white !important;
-    font-family: 'Roboto', sans-serif;
 }
 li a {
     font-size: .9em;
@@ -42,27 +88,94 @@ li a {
     padding-top: .5em;
     padding-bottom: .5em;
 }
-@media (max-width: 500px) {
-    #button{
-        width: 300px;
-    }
-    nav *{
-        margin-left:0;
-    }
-}
 h1 {
     font-size: 2.5em;
+}
+h2 {
+    font-weight: normal;
+    font-size: 2em;
+}
+#main {
+    margin: 0;
+    padding: 0;
+}
+#disclaimer img {
+    height: 80px;
 }
 #beautiful {
     border-left: 1px solid #888888;
     border-right: 1px solid #888888;
 }
-@media screen and (min-width: 480px) {
-    #disclaimer {
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
+#price {
+    font-size: 6em;
+    color: #8080BE;
 }
-#price{
-    font-size: 4em;
+#pricingBlock {
+    border-top: 1px solid #DADADA;
+    background-color: #F6F9FB;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+#pricing {
+    font-size: 1.5em;
+}
+#pricePrecision {
+    padding-top: .8em;
+}
+#cardBanner {
+    background-color: #4C535C;
+    padding-top: 1.2em;
+    padding-bottom: .6em;
+    text-align: center;
+    color: white;
+    font-size: 1.7em;
+    font-weight: 200;
+}
+.graphicBlock {
+    overflow: hidden;
+    border-bottom: 1px solid #DADADA;
+    height: 75%;
+}
+#graphic1Block {
+    background-color: #7CD5EF;
+}
+#graphic2Block {
+    background-color: #8080BE;
+}
+#graphic3Block {
+    background-color: #7CD5EF;
+}
+.fancy {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 15%;
+    margin-bottom: -18%;
+}
+.infoText * {
+    margin-left: 28%;
+    margin-right: 28%;
+}
+.infoText {
+    padding-top: 8%;
+    border-bottom: 1px solid #DADADA;
+    height: 75%;
+}
+.infoText i {
+    margin-left: 0;
+}
+#createAccountButton {
+    background-color: #00B088;
+    padding: .9em;
+    height: 3em;
+    width: 200px;
+    color: white;
+    margin: 5px auto;
+    border-radius: 5px;
+}
+#createAccountBlock{
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
