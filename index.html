@@ -33,9 +33,11 @@
             <div id="announcement">
                 <h1>Simple &amp; Beautiful Payments for Freelancers</h1>
                 <p>Get paid on time, every time.</p>
-                <div id="button">
-                    <p>CREATE A FREE ACCOUNT</p>
-                </div>
+                <a href="#">
+                    <div id="button">
+                        <p>CREATE A FREE ACCOUNT</p>
+                    </div>
+                </a>
             </div>
         </div>
     </nav>
@@ -77,11 +79,10 @@
             <p>Credit cards supported now. ACH coming soon!</p>
         </div>
         <div class="row">
-            <div class="col-sm-6 col-md-6 col-lg-6 hidden-xs graphicBlock" id="graphic1Block">
-                <!-- <div id="graphic1"></div> -->
+            <div class="col-sm-6 col-md-6 col-lg-6 hidden-xs hidden-sm graphicBlock" id="graphic1Block">
                 <img class="fancy" src="images/welcome-invoices-graphic-1.png" alt="fancy image 1">
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 infoText" id="graphicText1">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 infoText" id="graphicText1">
                 <h2>Integrates deeply with Bonsai Contracts</h2>
                 <p>Increase your payment rate with Bonsai Contracts: free bulletproof work contracts that are easy to create &amp; e-sign.</p>
                 <p>Once th contract is signed, generate a payment schedule with one click. <i>Contract are optional but recommanded.</i></p>
@@ -93,12 +94,12 @@
                 <p>Create invoices and request payment with the click of a button. Customize them to your brand, then send via email ou URL.</p>
                 <p>Clients can pay quickly and securely via credit card. <i>ACH is coming soon.</i></p>
             </div>
-            <div class="col-sm-6 col-md-6 col-lg-6 hidden-xs graphicBlock" id="graphic2Block">
+            <div class="col-md-6 col-lg-6 hidden-xs hidden-sm graphicBlock" id="graphic2Block">
                 <img class="fancy" src="images/welcome-invoices-graphic-2.png" alt="fancy image 2">
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-6 col-md-6 col-lg-6 hidden-xs graphicBlock" id="graphic3Block">
+            <div class="col-md-6 col-lg-6 hidden-xs hidden-sm graphicBlock" id="graphic3Block">
                 <img class="fancy" src="images/welcome-invoices-graphic-3.png" alt="fancy image 3">
             </div>
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 infoText" id="graphicText3">
@@ -110,12 +111,56 @@
         <div class="row text-center" id="createAccountBlock">
             <h2>Ready to freelance like a pro?</h2>
             <h2>Sign up here &amp; get 5 <strong>FREE</strong> invoices.</h2>
-            <div id="createAccountButton">CREATE AN ACCOUNT</div>
+            <a href="#">
+                <div id="createAccountButton">CREATE AN ACCOUNT</div>
+            </a>
         </div>
-
-
-
+        <div class="row" id="footer">
+            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
+                <h3>Products</h3>
+                <ul>
+                    <li><a href="#">CONTRACTS</a></li>
+                    <li><a href="#">PAYMENTS</a></li>
+                    <li><a href="#">RATES</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                <h3>Contact</h3>
+                <ul>
+                    <li>760 Market St., 5th Floor</li>
+                    <li>San Francisco, CA 94102</li>
+                    <li>
+                        <ul id="socialNetwork">
+                            <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-lg-offset-3 col-xl-offset-3" id="credit">
+                    &copy;2016 Bonsai Inc. Bonsai is not a law firm, does not provide legal services or advice, and does not provide or participate in legal representation. <a href="#" class="legal">Legal</a> - <a href="#" class="legal">Credits</a>
+                </div>
+                <div class="col-xs-2 col-sm-2 col-md-1 col-lg-1 col-xs-offset-5 col-sm-offset-5" id="mixpanel"><img src="images/badge_blue.png" alt="mixpanel">
+                </div>
+            </div>
+        </div>
     </div>
+    <a href="#logo">
+        <div id="pageTop">
+            <i class="fa fa-comments" aria-hidden="true"></i>
+        </div>
+    </a>
+    <script src="https://use.fontawesome.com/d45ea48418.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
